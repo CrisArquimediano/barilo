@@ -1,0 +1,55 @@
+body {
+    background-image: url("fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    font-size: 10pt;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Oswald;
+}
+
+img {
+    height: 500px;
+    width: 500px;
+}
+
+img.logo {
+    height: 100px;
+    width: 100px;
+}
+
+a.pag01 {
+    color: #000000;
+    text-align: center;
+    margin: auto;
+    display: block;
+    font-size: 30px;
+    font-family: 'calibri';
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+span.reservas {
+    margin-left: 200px;
+    margin-right: 200px;
+
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+}
