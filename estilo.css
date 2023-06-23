@@ -10,14 +10,30 @@ body {
     font-family: Oswald;
 }
 
-img {
-    height: 500px;
-    width: 500px;
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 50px;
+    padding-bottom: 100px;
+    overflow: hidden;
+    background-color: #ffffff;
 }
 
-img.logo {
-    height: 100px;
-    width: 100px;
+.navbar a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+}
+
+.logo {
+    float: left;
 }
 
 a.pag01 {
@@ -67,6 +83,7 @@ li a:hover {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    margin-top: 4em;
 }
 
 .texto-fondo-inicio {
