@@ -1,10 +1,4 @@
 body {
-    background-image: url("fondo1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    color: black;
-    font-size: 10pt;
     margin-left: 50px;
     margin-right: 50px;
     font-family: Oswald;
@@ -93,4 +87,28 @@ li a:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     color: rgb(255, 143, 15);
+}
+
+.casa-orilla-texto {
+    margin-right: .5em;
+    width: 50%;
+    height: 50%;
+    background-image: url('images/casa-orilla-opcion1.jpg');
+    background-color: #62c25a;
+    height: 400px;
+    background-position: left;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 4em;
+}
+
+.texto {
+    display: block;
+    float: right;
+    text-align: justify;
+    padding-top: .5em;
+    padding-right: .5em;
+    padding-bottom: 10em;
+    font-size: 1.25em;
+    font-family: 'calibri';
 }
