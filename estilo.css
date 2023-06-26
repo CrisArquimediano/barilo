@@ -17,7 +17,7 @@ header {
 }
 
 .logo {
-    margin: .5rem 1rem 0rem .5rem;
+    margin: .5rem 1rem .5rem .5rem;
 }
 
 .navbar {
@@ -29,34 +29,15 @@ header {
     color: #000000;
 }
 
-.brand-title {
-    font-size: 1.5rem;
-    padding-bottom: 1rem;
-}
-
-.brand-title ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-.brand-title li {
-    list-style: none;
-}
-
-.brand-title li a {
+.reservas {
     text-decoration: none;
     color: black;
     padding: 1rem;
     display: block;
 }
 
-.brand-title li:hover {
+.reservas:hover {
     background-color: gainsboro;
-}
-
-.brand-name {
-    margin-top: 1.2rem;
 }
 
 .navbar-links ul {
@@ -71,7 +52,7 @@ header {
 
 .navbar-links li a {
     text-decoration: none;
-    color: black;
+    color: #f79424d8;
     padding: 1rem;
     display: block;
 }
@@ -108,6 +89,11 @@ header {
         width: 100%;
     }
 
+    .reservas {
+        display: none;
+        width: 100%;
+    }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -130,8 +116,16 @@ header {
         display: flex;
     }
 
-    .brand-name {
-        display: none;
+    .reservas {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: .5rem 1rem;
+
+    }
+
+    .reservas.active {
+        display: flex;
     }
 }
 
