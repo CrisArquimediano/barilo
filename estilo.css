@@ -338,6 +338,24 @@ li a:hover {
     }
 }
 
+.services-header {
+    padding: 4rem;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.services-header h1 {
+    color: orange;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.services-header p {
+    font-size: larger;
+    padding-bottom: 1rem;
+}
+
+
 .services-photos {
     --gap: 16px;
     --pad: 4rem;
@@ -346,6 +364,7 @@ li a:hover {
 
     box-sizing: border-box;
     padding: var(--pad);
+    padding-top: 0;
 
     display: grid;
     grid-template-columns: repeat(var(--num-cols), 1fr);
