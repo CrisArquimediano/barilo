@@ -199,7 +199,7 @@ li a:hover {
     perspective: 10px;
 }
 
-.fondo-inicio {
+.background-index {
     padding-top: 300px;
     padding-bottom: 300px;
     position: relative;
@@ -219,18 +219,14 @@ li a:hover {
     z-index: -1;
 }
 
-.background::after {
-    opacity: .5;
-}
-
-.texto-fondo-inicio {
+.background-index-text {
     text-align: center;
     font-size: 2.5rem;
     color: white;
     text-shadow: 0 0 3px rgba(0, 0, 0, 0.589);
 }
 
-/*.casa-orilla-texto {
+/* .house-shore-text {
     margin-right: .5em;
     width: 50%;
     height: 50%;
@@ -241,21 +237,53 @@ li a:hover {
     background-repeat: no-repeat;
     position: relative;
     margin-top: 4em;
-}*/
+} */
 
-.texto {
-    margin: 0%;
-    text-align: justify;
-    padding-top: .5em;
-    padding-right: .5em;
-    padding-bottom: 10em;
-    font-size: 1.25em;
-    font-family: 'calibri';
+.house-shore-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+    background-color: white;
 }
 
-.orilla-lago {
-    float: left;
-    width: 60%;
-    height: 55%;
-    margin-right: 10px;
+.house-shore-text .shore-lake {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.house-shore-text .shore-lake img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-shore-text .text {
+    display: flex;
+    align-items: center;
+}
+
+.house-shore-text .text .content {
+
+    padding-right: 2rem;
+}
+
+.house-shore-text .text .content p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-bottom: .5rem;
+    text-align: justify;
+}
+
+@media (min-width: 991px) {
+    .house-shore-text .text .content {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .house-shore-text {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
 }
