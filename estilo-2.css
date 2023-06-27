@@ -1,0 +1,208 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cambria';
+}
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    top: 0;
+}
+
+.logo {
+    margin: .5rem 1rem .5rem .5rem;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.reservas {
+    text-decoration: none;
+    color: black;
+    padding: 1rem;
+    display: block;
+}
+
+.reservas:hover {
+    background-color: gainsboro;
+}
+
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    color: #f79424d8;
+    padding: 1rem;
+    display: block;
+}
+
+.navbar-links li:hover {
+    background-color: gainsboro;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+@media (max-width: 500px) {
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .reservas {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links li {
+        text-align: center;
+    }
+
+    .navbar-links li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .reservas {
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: .5rem 1rem;
+
+    }
+
+    .reservas.active {
+        display: flex;
+    }
+}
+
+.wrapper .container {
+    background-image: url('images/casa-background-inicio.jpg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(177, 175, 175, 0.747);
+    background-blend-mode: multiply;
+    /* opacity: .6; */
+}
+
+.background-index-text {
+    padding-top: 300px;
+    padding-bottom: 330px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+}
+
+
+
+.text-image {
+    --gap: 16px;
+    --num-cols: 2;
+    --row-height: 340px;
+
+    box-sizing: border-box;
+    padding-top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: white;
+}
+
+.image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-image .image {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.text-image .text {
+    padding-right: 1rem;
+    padding-top: 1rem;
+    text-align: justify;
+}
+
+.text h2 {
+    color: orange;
+    text-align: center;
+}
+
+.text-image-2 .text-2 {
+    padding-right: 0;
+    padding-left: 1rem;
+}
+
+.text-image-2 {
+    --gap: 16px;
+    --row-height: 380px;
+
+    box-sizing: border-box;
+    padding-top: 0;
+
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: white;
+}

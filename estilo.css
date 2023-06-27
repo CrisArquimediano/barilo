@@ -200,7 +200,6 @@ li a:hover {
 }
 
 .background-index {
-    padding-top: 300px;
     padding-bottom: 300px;
     position: relative;
     display: flex;
@@ -220,6 +219,7 @@ li a:hover {
 }
 
 .background-index-text {
+    padding-top: 300px;
     text-align: center;
     font-size: 2.5rem;
     color: white;
@@ -342,6 +342,7 @@ li a:hover {
     padding: 4rem;
     padding-bottom: 0;
     text-align: center;
+    background-color: white;
 }
 
 .services-header h1 {
@@ -370,6 +371,7 @@ li a:hover {
     grid-template-columns: repeat(var(--num-cols), 1fr);
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
+    background-color: white;
 }
 
 .services-photos>img {
@@ -383,4 +385,32 @@ li a:hover {
         --num-cols: 2;
         --row-height: 150px;
     }
+}
+
+
+.background-quotes {
+    margin-top: 350px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background-q {
+    transform: translateZ(-10px) scale(2);
+    position: absolute;
+    height: 50%;
+    width: 100vw;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.quotes {
+    padding-top: 300px;
+    text-align: center;
+    font-size: 2.5rem;
+    color: white;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.589);
 }
