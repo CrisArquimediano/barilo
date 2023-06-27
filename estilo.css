@@ -242,7 +242,7 @@ li a:hover {
 .house-shore-text {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 55% 40%;
     gap: 50px 30px;
     background-color: white;
 }
@@ -254,17 +254,15 @@ li a:hover {
 
 .house-shore-text .shore-lake img {
     width: 100%;
-    height: 100%;
+    height: 85%;
     object-fit: cover;
 }
 
 .house-shore-text .text {
     display: flex;
-    align-items: center;
 }
 
 .house-shore-text .text .content {
-
     padding-right: 2rem;
 }
 
@@ -272,10 +270,11 @@ li a:hover {
     font-size: 1.1rem;
     line-height: 2rem;
     padding-bottom: .5rem;
+    top: 0;
     text-align: justify;
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
     .house-shore-text .text .content {
         padding-left: 0;
     }
@@ -283,6 +282,57 @@ li a:hover {
 
 @media (max-width: 768px) {
     .house-shore-text {
+        width: 90%;
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+.house-bedroom-text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 50px 30px;
+    background-color: white;
+}
+
+.house-bedroom-text .bedroom {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.house-bedroom-text .bedroom img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.house-bedroom-text .text {
+    display: flex;
+    align-items: center;
+}
+
+.house-bedroom-text .text .content {
+    padding-left: 2rem;
+}
+
+.house-bedroom-text .text .content p {
+    font-size: 1.1rem;
+    line-height: 2rem;
+    padding-bottom: .5rem;
+    text-align: justify;
+}
+
+@media (min-width: 991px) {
+    .house-bedroom-text .text .content {
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .house-bedroom-text {
         width: 90%;
         grid-template-columns: 1fr;
     }
