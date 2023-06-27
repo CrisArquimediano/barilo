@@ -141,7 +141,7 @@ header {
     /* opacity: .6; */
 }
 
-.background-index-text {
+.background-text {
     padding-top: 300px;
     padding-bottom: 330px;
     text-align: center;
@@ -205,4 +205,67 @@ header {
     grid-auto-rows: var(--row-height);
     gap: var(--gap);
     background-color: white;
+}
+
+
+
+
+.services-header {
+    padding: 4rem;
+    padding-bottom: 0;
+    text-align: center;
+    background-color: white;
+}
+
+.services-header h1 {
+    color: orange;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.services-header p {
+    font-size: larger;
+    padding-bottom: 1rem;
+}
+
+
+.services-photos {
+    --gap: 16px;
+    --pad: 4rem;
+    --num-cols: 3;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    padding: var(--pad);
+    padding-top: 0;
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+    background-color: white;
+}
+
+.services-photos>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .services-photos {
+        --num-cols: 2;
+        --row-height: 150px;
+    }
+}
+
+.background-quotes {
+    background-image: url('images/fongo-techos-quotes-opcion2.jpg');
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    background-color: rgba(177, 175, 175, 0.747);
+    background-blend-mode: multiply;
+    /* opacity: .6; */
 }
