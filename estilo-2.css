@@ -267,17 +267,4 @@ header {
     height: 85%;
     background-color: rgba(177, 175, 175, 0.747);
     background-blend-mode: multiply;
-    /* opacity: .6; */
-}
-
-.map {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    overflow: hidden;
-
-    box-sizing: border-box;
-
-    display: flex;
 }
